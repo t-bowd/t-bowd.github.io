@@ -1,0 +1,189 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Monument Grotesk,Helvetica,Arial,sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color: #101010;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    height: 100dvh;
+    position: fixed;
+    z-index: 1010;
+}
+
+ .frame {
+    background-color: #dd1010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    color: #101010;
+    font-size: 20px;
+    z-index: 1000;
+}
+.frame-top, .frame-bottom {
+    height: 60px;
+    width: 100vw;
+}
+.frame-left, .frame-right {
+    width: 60px;
+    height: 100dvh;
+}
+ .frame-top {
+    top: 0;
+}
+.frame-left {
+    left: 0px;
+}
+.frame-right {
+    right: 0px;
+}
+.frame-bottom {
+    bottom: 0;
+}
+.frame-cont {
+    flex-shrink:0;
+    display: flex;
+    gap:70px;
+}
+.frame-cont--left {
+    transform: rotate(270deg);
+}
+.frame-cont--right {
+    transform: rotate(-270deg);
+}
+.inner-container {
+    width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 60px;
+  overflow: scroll;
+}
+.page-container {
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #dd1010;
+  padding: 100px;
+  z-index: 1;
+}
+
+.page-container p {
+    font-size: 35px;
+    text-align: center;
+}
+
+.page-container .date {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.page-container .details {
+    margin-top: 400px;
+}
+.logo {
+    position: fixed;
+    margin: 0 auto;
+    display: block;
+    top: 47%;
+}
+
+.tnt {
+    font-size: 100px;
+}
+
+.tnt-1 {
+    position: absolute;
+    top: 35px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+.frame-top, .frame-bottom {
+    height: 22px;
+}
+.frame-left, .frame-right {
+    width: 22px;
+}
+.frame {
+    font-size: 11px;
+}
+.inner-container {
+    padding: 22px;
+}
+.page-container {
+    padding: 0 20px 0 20px;
+}
+.page-container .date {
+    margin-top: 75px;
+    margin-bottom: 0px;
+}
+.page-container p {
+    font-size: 15px;
+}
+.tnt {
+    font-size: 50px;
+}
+.page-container .details {
+    margin-top: 320px;
+}
+.tnt-1 {
+    top: 17px;
+}
+}
