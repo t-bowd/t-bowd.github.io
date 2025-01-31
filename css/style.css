@@ -128,12 +128,12 @@ body {
 }
 
 .page-container .date {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .page-container .details {
-    margin-top: 400px;
+    margin-top: 450px;
 }
 .logo {
     position: fixed;
@@ -154,9 +154,9 @@ body {
 .rsvp-btn {
     color: #000000;
     background-color: #dd1010;
-    display: block;
+    margin: auto;
     text-align: center;
-    padding: 15px 40px;
+    margin-bottom: 150px;
 }
 
 .rsvp-btn a {
@@ -164,13 +164,18 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 25px;
+    padding: 17px 40px 15px 40px;
 }
 
 /*  Map  */
 
 #map {
 display: block;
-height: 400px;
+height: 600px;
+width: 600px;
+margin: auto;
+margin-top: 100px;
+margin-bottom: 100px;
 }
 
 
