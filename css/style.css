@@ -151,6 +151,28 @@ body {
     top: 35px;
 }
 
+.rsvp-btn {
+    color: #000000;
+    background-color: #dd1010;
+    display: block;
+    text-align: center;
+    padding: 15px 40px;
+}
+
+.rsvp-btn a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*  Map  */
+
+#map {
+display: block;
+height: 400px;
+}
+
 
 
 
