@@ -136,10 +136,10 @@ body {
     margin-top: 450px;
 }
 .logo {
-    position: fixed;
+    position: absolute;
     margin: 0 auto;
     display: block;
-    top: 47%;
+    top: 8%;
 }
 
 .tnt {
@@ -157,6 +157,7 @@ body {
     margin: auto;
     text-align: center;
     margin-bottom: 150px;
+    width: 60%
 }
 
 .rsvp-btn a {
@@ -165,6 +166,15 @@ body {
     text-decoration: none;
     font-size: 25px;
     padding: 17px 40px 15px 40px;
+}
+
+.btn-fixed {
+    position: fixed;
+    top: 100px;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 /*  Map  */
@@ -221,6 +231,12 @@ margin-bottom: 100px;
 .faq-answer {
     font-size: 25px !important;
     text-align: left !important;
+}
+
+.sign-off {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
 }
 
 
